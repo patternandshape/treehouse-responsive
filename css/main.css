@@ -87,9 +87,30 @@ nav a:hover {
   padding: 20px 0;
 }
 
+img {
+  max-width: 100%;
+}
+
+.cheetah {
+  margin-top: 35px;
+}
+
+.inline {
+  float: right;
+  margin: 0 0 2em 1em;
+  min-width: 300px;
+  width: 15%;
+}
 /*************************
 Media Queries
 *************************/
+@media only screen and (min-width: 320px) {
+  .inline {
+    width: 100%;
+    float: none;
+    margin: 0;
+}
+}
 
 @media only screen and (min-width: 480px) {
    nav a {
@@ -107,6 +128,12 @@ Media Queries
   nav li:last-child a {
     margin-right: 0;
   }
+
+  .inline {
+    width: 100%;
+    float: none;
+    margin: 0;
+  }
 }
 
 @media only screen and (min-width: 768px),
@@ -122,9 +149,11 @@ Media Queries
   }
 
   nav a {
-    padding: 15px 1%;
+    padding: 15px 1.5%;
   }
+}
 
+@media only screen and (min-width: 925px) {
   .main article {
     float: left;
     width: 57%;
